@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001- Sayaç Uygulaması</title>
+</head>
+<body>
+    <h1>Sayaç</h1>
+
+    <button id="btn">0</button>
+
+    <script>
+        const btnSayac = document.getElementById("btn");
+
+        // YÖNTEM 3
+        btnSayac.addEventListener("click", function() {
+            btnSayac.textContent = Number(btnSayac.textContent) + 1;
+        });
+
+        // YÖNTEM 2
+        // let x = 0;
+        // btnSayac.onclick = () => btnSayac.textContent = ++x;
+
+        // YÖNTEM 1
+        // function arttir() {
+        //     let icindekiDeger = Number(btnSayac.textContent);
+        //     btnSayac.textContent = icindekiDeger + 1;
+        // }
+
+        // // btnSayac.onclick = arttir;
+
+        // btnSayac.addEventListener("click", arttir);
+        
+    </script>
+</body>
+</html>
