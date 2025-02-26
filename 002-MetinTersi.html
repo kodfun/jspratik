@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metni Tersine Çevir</title>
+</head>
+<body>
+    <label for="girdi">Metin:</label>
+    <input oninput="goster()" id="girdi" type="text"><br><br>
+    <label for="cikti">Tersi:</label>
+    <input id="cikti" type="text"><br>
+
+
+
+    <script>
+        const txtMetin = document.getElementById("girdi");
+        const txtTersi = document.getElementById("cikti");
+
+        function goster() {
+            let metin = txtMetin.value;
+            let tersten = tersi1(metin);
+            txtTersi.value = tersten;
+            let palindrom = metin == tersten && metin.length > 1;
+            txtTersi.style.background = palindrom ? "green" : "white";
+        }
+
+        function tersi1(metin) {
+            let sonuc = "";
+
+            for (let c of metin)
+                sonuc = c + sonuc;
+
+            return sonuc;
+        }
+
+        function tersi(metin) {
+            return metin.split("").reverse().join("");
+        }
+    </script>
+</body>
+</html>
