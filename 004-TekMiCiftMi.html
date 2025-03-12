@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 - Tek mi Çift mi?</title>
+    <style>
+        .sonuc {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <label for="sayi">Sayı</label>
+     <input type="number" id="sayi">
+     <button id="hesapla">Hesapla</button>
+     <hr>
+     <div id="sonuc"></div>
+
+     <script>
+        let txtSayi = document.getElementById("sayi");
+        let btnHesapla = document.getElementById("hesapla");
+        let divSonuc = document.getElementById("sonuc");
+
+        function hesapla() {
+            let sayi = Number(txtSayi.value);
+            let sonuc = sayi % 2 == 0 ? "çift" : "tek";
+            let cumle = `${sayi} sayısı bir <span class="sonuc">${sonuc}</span> sayıdır.`;
+            divSonuc.innerHTML = cumle;
+        }
+
+        // btnHesapla.onclick = hesapla;
+        btnHesapla.addEventListener("click", hesapla);
+     </script>
+</body>
+</html>

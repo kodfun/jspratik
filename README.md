@@ -10,3 +10,6 @@ Bonus: Metin palindrom (tersi kendisiyle aynı) ise bunu yeşil rengiyle belirti
 
 ## 3. Zar At
 Bir buton ve boş bir ul listesinden oluşan bir arayüz hazırla. Butona tıklandıkça 1-6 aralığında rastgele bir sayı (zar) listenin başına eklensin.
+
+## 4. Tek mi Çift mi?
+Bir sayı kutusuna girilen bir sayının tek mi yoksa çift mi olduğunu söyleyen programı yazınız.
