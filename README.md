@@ -13,3 +13,6 @@ Bir buton ve boş bir ul listesinden oluşan bir arayüz hazırla. Butona tıkla
 
 ## 4. Tek mi Çift mi?
 Bir sayı kutusuna girilen bir sayının tek mi yoksa çift mi olduğunu söyleyen programı yazınız.
+
+## 5. Rastgele Renk
+Sayfaya tıkladıkça arka plan rengini rastgele değiştirip renk kodunu da sayfada gösteren uygulamayı yapınız.

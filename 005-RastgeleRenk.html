@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 - Rastgele Renk</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        // 0-255 aralığında rastgele sayı üretir
+        function c() {
+            return Math.floor(Math.random() * 256);
+        }
+
+        // rgb renk kodu üretir
+        function renk() {
+            return `rgb(${c()}, ${c()}, ${c()})`;
+        }
+        
+        window.onclick = function() {
+            let kod = renk();
+            document.body.innerHTML = kod;
+            document.body.style.backgroundColor = kod;
+        };
+    </script>
+</body>
+</html>
