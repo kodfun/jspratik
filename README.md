@@ -16,3 +16,6 @@ Bir sayı kutusuna girilen bir sayının tek mi yoksa çift mi olduğunu söyley
 
 ## 5. Rastgele Renk
 Sayfaya tıkladıkça arka plan rengini rastgele değiştirip renk kodunu da sayfada gösteren uygulamayı yapınız.
+
+## 6. Dijital Saat
+00:00:00 formatında bir dijital saat yapınız. Ekranda ortalı ve uygun bir font ile gösterebilirsiniz.
