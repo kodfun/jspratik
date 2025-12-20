@@ -21,4 +21,4 @@ Sayfaya tıkladıkça arka plan rengini rastgele değiştirip renk kodunu da say
 00:00:00 formatında bir dijital saat yapınız. Ekranda ortalı ve uygun bir font ile gösterebilirsiniz.
 
 ## 7. Veri Türleri
-JavaScript'te en bilinen 6 veri türünü örnekleyin ve typeof yardımıyla bu türlerin adını yazdırın.
+JavaScript'te en bilinen 6 veri türünü (String, Number, Boolean, Undefined, Object, Function) örnekleyin ve typeof yardımıyla bu türlerin adını ekrana yazdırın.
