@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Türleri</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 36px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        /* ================================================
+        GÖREVLERLE JAVASCRIPT #7
+        KONU: Veri Türleri ve typeof (Data Types)
+        REPO: https://github.com/kodfun/jspratik
+        ================================================ */
+
+        // --- 1. STRING (Metin) ---
+        // İpucu: Tırnak işaretleri ("" veya '') içindeki her şey.
+        let a = "Merhaba Dünya!";
+        yaz(typeof a);
+        
+        // --- 2. NUMBER (Sayı) ---
+        // İpucu: Tırnak yok. Tam sayılar ve ondalıklı sayılar.
+        let b = 3.3;
+        yaz(typeof b);
+
+        // --- 3. BOOLEAN (Mantıksal) ---
+        // İpucu: Sadece iki ihtimal: true (doğru) veya false (yanlış).
+        let c = true;
+        yaz(typeof c);
+
+        // --- 4. UNDEFINED (Tanımsız) ---
+        // İpucu: Oluşturulmuş ama henüz değeri verilmemiş değişken.
+        let d;
+        yaz(typeof d);
+
+        // --- 5. OBJECT (Nesne) ---
+        // İpucu: Birden fazla veriyi gruplamak için kullanılır. { süslü parantez }
+        // Not: Diziler (Array) ve null değeri de teknik olarak object sayılır.
+        let e = {
+            ad: "Ali",
+            yas: 33,
+            evliMi: false,
+            ozet: function() {
+                return `${this.ad} (${this.yas}) - ${this.evliMi ? "Evli" : "Bekar"}`;
+            }
+        }
+        yaz(typeof e);
+        // e = ["muz", "kivi", "çilek"];
+        // yaz(typeof f);
+        // e = null;
+        // yaz(typeof g);
+
+        // --- 6. FUNCTION (Fonksiyon) ---
+        // İpucu: Bir işi yapan kod bloklarıdır.
+        // Özel Durum: Teknik olarak o da bir objedir ama typeof ona özel "function" der.
+        function saat() {
+            return new Date().toLocaleTimeString("tr");
+        }
+        yaz(typeof alert);
+
+        function yaz(str) {
+            document.write(str + "<br>");
+        }
+    </script>
+</body>
+
+</html>
