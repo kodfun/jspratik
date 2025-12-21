@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Motivasyon Mesajı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Manrope", sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-size: 5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="soz">Yükleniyor..</div>
+
+    <script>
+        const div = document.getElementById("soz");
+        const mesajlar = [
+            "Bugün başlamak için mükemmel bir gün.",
+            "Küçük adımlar büyük değişimler yaratır.",
+            "Devam ettiğin sürece kaybetmezsin.",
+            "Başladın, bu zaten yeterince güçlü.",
+            "İlerleme mükemmelden iyidir.",
+            "Yapabildiğin kadarını yap, yeter.",
+            "Bugünkü sen dünkünden ileride.",
+            "Zorlanman geliştiğinin kanıtı.",
+            "Pes etmediğin her an kazançtır.",
+            "Bir adım daha at.",
+            "Odaklan ve devam et.",
+            "Şu an yaptığın şey önemli.",
+            "Kendinle yarışıyorsun.",
+            "Az da olsa ilerliyorsun.",
+            "Bugün vazgeçmemeyi seç.",
+            "Hata yapmak öğrenmenin parçası.",
+            "Yavaş olmak sorun değil.",
+            "Durma, yönünü koru.",
+            "Emek asla boşa gitmez.",
+            "İstikrar motivasyondan güçlüdür.",
+            "Bugün dünden daha bilgilisin.",
+            "Zor olan değerli olandır.",
+            "Başlamak bitirmenin yarısıdır.",
+            "Her deneme seni yaklaştırır.",
+            "Kendine güvenmeyi öğreniyorsun.",
+            "Bugün de buradasın, aferin.",
+            "İlerliyorsun, fark et.",
+            "Sabır da bir beceridir.",
+            "Vazgeçmediğin için güçlüsün.",
+            "Bugün küçük bir kazanım yeter.",
+            "Öğreniyorsan yolun doğru.",
+            "Her şey adım adım.",
+            "Şu an çabalıyorsun.",
+            "Bu da geçecek.",
+            "Zorluklar seni şekillendirir.",
+            "Bir kez daha dene.",
+            "Odaklan, nefes al.",
+            "Bugün de ilerleme günü.",
+            "Kendini küçümseme.",
+            "Yol uzun ama anlamlı.",
+            "Elinden geleni yapıyorsun.",
+            "Bugün vazgeçme günü değil.",
+            "İstediğin hayat çalışarak gelir.",
+            "Her gün biraz daha iyi.",
+            "Çaban fark yaratıyor.",
+            "Bugün bir şey öğrendin.",
+            "Devam et, ritmi bozma.",
+            "Kendinle gurur duyabilirsin.",
+            "Bu sürecin içindesin.",
+            "Zorlanıyorsan doğru yerdesin.",
+            "Kendine zaman tanı.",
+            "Bugün de denedin.",
+            "İstikrarlı olmak yeterli.",
+            "Kıyaslama, ilerlemeye bak.",
+            "Yolculuk da sonuç kadar değerli.",
+            "Bugün de kendin için bir şey yaptın.",
+            "Her adım seni sen yapıyor.",
+            "Durmak değil, devam etmek önemli.",
+            "Bugün vazgeçmeyerek kazandın.",
+            "Öğrenme devam ediyor.",
+            "Kendine yüklenme.",
+            "Sabırlı ol, olacak.",
+            "İlerlemenin sesi sessizdir.",
+            "Bugün de çaba var.",
+            "Az ama sürekli.",
+            "Yolda olmak yeter.",
+            "Bir gün geriye bakacaksın.",
+            "Bu emek birikecek.",
+            "Bugün küçük bir fark yarattın.",
+            "Devam ettiğin sürece umut var.",
+            "Yapıyorsun, gerçekten.",
+            "Zorlanman normal.",
+            "Bugün de denge kuruyorsun.",
+            "Bu da sürecin parçası.",
+            "Kendini bırakma.",
+            "İlerleme görünmez olabilir.",
+            "Bugün de buradasın.",
+            "Devam et, acele etme.",
+            "Kendine güven inşa ediliyor.",
+            "Bugün öğrenme günü.",
+            "Bir adım daha yeter.",
+            "Yol seni değiştiriyor.",
+            "Bugün vazgeçmedin.",
+            "İstikrar kazanıyor.",
+            "Zamanla oturacak.",
+            "Bu çaba boşa değil.",
+            "Bugün de kendin için buradasın.",
+            "Devam et, yeter."
+        ];
+
+        function goster() {
+            let i = Math.floor(Math.random() * mesajlar.length);
+            div.textContent = mesajlar[i];
+        }
+
+        goster();
+        setInterval(goster, 5000);
+    </script>
+</body>
+
+</html>

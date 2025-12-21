@@ -22,3 +22,6 @@ Sayfaya tıkladıkça arka plan rengini rastgele değiştirip renk kodunu da say
 
 ## 7. Veri Türleri
 JavaScript'te en bilinen 6 veri türünü (String, Number, Boolean, Undefined, Object, Function) örnekleyin ve typeof yardımıyla bu türlerin adını ekrana yazdırın.
+
+## 8. Rastgele Motivasyon Mesajı
+Bir dizide tuttuğun motivasyon mesajlarını belli zaman aralıklarıyla ekranda rastgele göster.
