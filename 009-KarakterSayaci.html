@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Karakter Sayacı</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            padding: 2rem;
+            margin: 40px auto;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 120px;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .sonuc {
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hata {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Karakter Sayısı</h2>
+
+        <textarea id="metin"></textarea>
+
+        <div id="sonuc" class="sonuc">
+            <span>Toplam: <strong id="toplam">0</strong></span>
+            <span>Kalan: <strong id="kalan">140</strong></span>
+        </div>
+    </div>
+
+    <script>
+        const LIMIT = 140;
+        const txt = document.getElementById("metin");
+        const divSonuc = document.getElementById("sonuc");
+        const toplamEl = document.getElementById("toplam");
+        const kalanEl = document.getElementById("kalan");
+
+        txt.addEventListener("input", function() {
+            toplamEl.textContent = txt.value.length;
+            let kalan = LIMIT - txt.value.length;
+            kalanEl.textContent = kalan;
+
+            if (kalan < 0)
+                divSonuc.classList.add("hata");
+            else
+                divSonuc.classList.remove("hata");
+        });
+    </script>
+</body>
+</html>

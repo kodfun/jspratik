@@ -25,3 +25,7 @@ JavaScript'te en bilinen 6 veri türünü (String, Number, Boolean, Undefined, O
 
 ## 8. Rastgele Motivasyon Mesajı
 Bir dizide tuttuğun motivasyon mesajlarını belli zaman aralıklarıyla ekranda rastgele göster.
+
+## 9. Karakter Sayacı
+Bir textarea içine yazılan metnin karakter sayısını anlık olarak ekranda gösteren bir uygulama yapınız.
+Bonus: Belirli bir karakter limiti (örneğin 140) koyun. Kullanıcı yazdıkça kalan karakter sayısını gösterin, limit aşılırsa sayacı kırmızı renge boyayın.
