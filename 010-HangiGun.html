@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. Hangi Günde Doğdun?</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 3rem;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        input, button {
+            font-size: 1.5rem;
+            padding: .5rem;
+        }
+
+        #sonuc {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hangi Gün Doğdun?</h1>
+
+    <label for="tarih">Doğum Tarihiniz:</label>
+    <input type="date" id="tarih">
+    <button id="goster">Göster</button>
+    <h2 id="sonuc">?</h2>
+
+    <script>
+        const inputTarih = document.getElementById("tarih");
+        const btnGoster = document.getElementById("goster");
+        const h2Sonuc = document.getElementById("sonuc");
+        const gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+        const emojiler = ["☀️", "💼", "📚", "🎯", "🎉", "🌙", "🎮"];
+
+        btnGoster.addEventListener("click", function() {
+            if (!inputTarih.value) {
+                h2Sonuc.textContent = "Bir tarih seçiniz!";
+                return;
+            }
+
+            const tarih = new Date(inputTarih.value)
+            // 1. Yöntem: Dizi ile
+            // h2Sonuc.textContent = gunler[tarih.getDay()];
+            // 2. Yöntem: JavaScript Yerel Desteği ile
+            const gun = tarih.toLocaleDateString("tr", {weekday: "long"});
+            
+            // BONUS: HER GÜNE FARKLI EMOJİ
+            const emoji = emojiler[tarih.getDay()];
+
+            h2Sonuc.textContent = emoji + " " + gun;
+        });
+
+    </script>
+</body>
+</html>

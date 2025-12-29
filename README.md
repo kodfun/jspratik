@@ -29,3 +29,7 @@ Bir dizide tuttuğun motivasyon mesajlarını belli zaman aralıklarıyla ekrand
 ## 9. Karakter Sayacı
 Bir textarea içine yazılan metnin karakter sayısını anlık olarak ekranda gösteren bir uygulama yapınız.
 Bonus: Belirli bir karakter limiti (örneğin 140) koyun. Kullanıcı yazdıkça kalan karakter sayısını gösterin, limit aşılırsa sayacı kırmızı renge boyayın.
+
+## 10. Hangi Gün Doğdun?
+Kullanıcının doğum tarihini alıp, o tarihin haftanın hangi gününe denk geldiğini söyleyen bir uygulama yapınız.
+Bonus: Her gün için farklı emoji (☀️ 💼 📚 🎯 🎉 🌙 🎮) gösterin.
