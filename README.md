@@ -33,3 +33,8 @@ Bonus: Belirli bir karakter limiti (örneğin 140) koyun. Kullanıcı yazdıkça
 ## 10. Hangi Gün Doğdun?
 Kullanıcının doğum tarihini alıp, o tarihin haftanın hangi gününe denk geldiğini söyleyen bir uygulama yapınız.
 Bonus: Her gün için farklı emoji (☀️ 💼 📚 🎯 🎉 🌙 🎮) gösterin.
+
+## 11. Basit Hesap Makinesi
+2 sayı kutusu ve dört işlem butonlarını (+ - x ÷) oluşturun. Butonlara tıklandığında seçilen matematiksel işlemi yapıp sonucu ekrana yazdırın.
+
+Bonus: Sıfıra bölme işleminde hata mesajı verin ve dört işleme ek olarak mod ve üs alma özelliklerini ekleyin.
