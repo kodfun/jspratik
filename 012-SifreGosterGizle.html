@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Göster/Gizle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, slateblue, mediumorchid);
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .sifreKutusu {
+            max-width: 150px;
+            position: relative;
+        }
+
+
+        .sifreKutusu>input {
+            width: 100%;
+            padding: 12px 32px 12px 12px;
+        }
+
+        #gostergizle {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            color: gray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="sifre">Şifreniz</label>
+        <div class="sifreKutusu">
+            <input id="sifre" type="password" placeholder="Şifrenizi giriniz">
+            <button id="gostergizle"><i id="ikon" class="fa-solid fa-eye"></i></button>
+        </div>
+    </div>
+
+
+    <script>
+        const inputSifre = document.getElementById("sifre");
+        const btnGosterGizle = document.getElementById("gostergizle");
+        const ikon = document.getElementById("ikon");
+
+        btnGosterGizle.addEventListener("click", function () {
+            if (inputSifre.type == "password") {
+                inputSifre.type = "text";
+                ikon.classList.replace("fa-eye", "fa-eye-slash");
+            }
+            else {
+                inputSifre.type = "password";
+                ikon.classList.replace("fa-eye-slash", "fa-eye");
+            }
+        });
+    </script>
+</body>
+
+</html>

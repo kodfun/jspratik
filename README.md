@@ -36,5 +36,8 @@ Bonus: Her gün için farklı emoji (☀️ 💼 📚 🎯 🎉 🌙 🎮) göst
 
 ## 11. Basit Hesap Makinesi
 2 sayı kutusu ve dört işlem butonlarını (+ - x ÷) oluşturun. Butonlara tıklandığında seçilen matematiksel işlemi yapıp sonucu ekrana yazdırın.
-
 Bonus: Sıfıra bölme işleminde hata mesajı verin ve dört işleme ek olarak mod ve üs alma özelliklerini ekleyin.
+
+## 12. Şifre Göster/Gizle
+Bir şifre input'u ve yanında bir göz ikonu butonu oluşturun. Butona tıklandığında şifre görünür/gizli hale gelsin ve ikon değişsin.
+BONUS: CSS kullanarak göz ikonu butonunun şifre alanının üstünde ve sağ tarafında görünmesini sağlayın.
