@@ -41,3 +41,7 @@ Bonus: Sıfıra bölme işleminde hata mesajı verin ve dört işleme ek olarak 
 ## 12. Şifre Göster/Gizle
 Bir şifre input'u ve yanında bir göz ikonu butonu oluşturun. Butona tıklandığında şifre görünür/gizli hale gelsin ve ikon değişsin.
 BONUS: CSS kullanarak göz ikonu butonunun şifre alanının üstünde ve sağ tarafında görünmesini sağlayın.
+
+## 13. Fareyi (Mouse) Kovalayan Kedi
+Sayfa üzerinde mouse hareket ettikçe bir kedi (🐱) görseli imleci takip etsin.
+Bonus: Kedinin hareketini CSS `transition` kullanarak daha yumuşak ve akıcı hale getirin.
