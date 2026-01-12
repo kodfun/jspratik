@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şanslı Kişiyi Bul</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, slateblue, mediumorchid);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 1rem;
+            resize: none;
+        }
+
+        button {
+            margin: 1rem 0;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #fff;
+            color: slateblue;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-top: 1rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Şanslı Kişiyi Bul</h1>
+    <textarea id="kisiler" rows="12" cols="20">ali
+can
+cem
+ece</textarea><br>
+    <button id="cekilis">Çekiliş Yap</button>
+    <h2 id="sonuc">?</h2>
+
+    <script>
+        const txtKisiler = document.getElementById("kisiler");
+        const btnCekilis = document.getElementById("cekilis");
+        const txtSonuc = document.getElementById("sonuc");
+
+        btnCekilis.addEventListener("click", cekilis);
+
+        function cekilis() {
+            const dizi = txtKisiler.value.split("\n");
+            const sansli = dizi[Math.floor(Math.random() * dizi.length)];
+            txtSonuc.textContent = sansli;
+        }
+
+        txtKisiler.addEventListener("input", kaydet);
+
+        function kaydet() {
+            localStorage["kisiler"] = txtKisiler.value;
+        }
+
+        if (localStorage["kisiler"])
+            txtKisiler.value = localStorage["kisiler"];
+    </script>
+</body>
+
+</html>

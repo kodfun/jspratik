@@ -45,3 +45,7 @@ BONUS: CSS kullanarak göz ikonu butonunun şifre alanının üstünde ve sağ t
 ## 13. Fareyi (Mouse) Kovalayan Kedi
 Sayfa üzerinde mouse hareket ettikçe bir kedi (🐱) görseli imleci takip etsin.
 Bonus: Kedinin hareketini CSS `transition` kullanarak daha yumuşak ve akıcı hale getirin.
+
+## 14. Çekiliş Listesi
+Bir textarea'ya her satıra bir isim yazılsın. "Çekiliş Yap" butonuna tıklandığında metni satırlara göre ayırıp (`split`) rastgele bir isim seçsin ve kazananı büyük bir şekilde ekranda göstersin.
+Bonus: Textarea'ya girilen isimleri localStorage'da saklayın, sayfa yenilendiğinde bu isimler otomatik olarak gelsin.
