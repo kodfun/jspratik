@@ -27,25 +27,29 @@ JavaScript'te en bilinen 6 veri türünü (String, Number, Boolean, Undefined, O
 Bir dizide tuttuğun motivasyon mesajlarını belli zaman aralıklarıyla ekranda rastgele göster.
 
 ## 9. Karakter Sayacı
-Bir textarea içine yazılan metnin karakter sayısını anlık olarak ekranda gösteren bir uygulama yapınız.
+Bir textarea içine yazılan metnin karakter sayısını anlık olarak ekranda gösteren bir uygulama yapınız.\
 Bonus: Belirli bir karakter limiti (örneğin 140) koyun. Kullanıcı yazdıkça kalan karakter sayısını gösterin, limit aşılırsa sayacı kırmızı renge boyayın.
 
 ## 10. Hangi Gün Doğdun?
-Kullanıcının doğum tarihini alıp, o tarihin haftanın hangi gününe denk geldiğini söyleyen bir uygulama yapınız.
+Kullanıcının doğum tarihini alıp, o tarihin haftanın hangi gününe denk geldiğini söyleyen bir uygulama yapınız.\
 Bonus: Her gün için farklı emoji (☀️ 💼 📚 🎯 🎉 🌙 🎮) gösterin.
 
 ## 11. Basit Hesap Makinesi
-2 sayı kutusu ve dört işlem butonlarını (+ - x ÷) oluşturun. Butonlara tıklandığında seçilen matematiksel işlemi yapıp sonucu ekrana yazdırın.
+2 sayı kutusu ve dört işlem butonlarını (+ - x ÷) oluşturun. Butonlara tıklandığında seçilen matematiksel işlemi yapıp sonucu ekrana yazdırın.\
 Bonus: Sıfıra bölme işleminde hata mesajı verin ve dört işleme ek olarak mod ve üs alma özelliklerini ekleyin.
 
 ## 12. Şifre Göster/Gizle
-Bir şifre input'u ve yanında bir göz ikonu butonu oluşturun. Butona tıklandığında şifre görünür/gizli hale gelsin ve ikon değişsin.
+Bir şifre input'u ve yanında bir göz ikonu butonu oluşturun. Butona tıklandığında şifre görünür/gizli hale gelsin ve ikon değişsin.\
 BONUS: CSS kullanarak göz ikonu butonunun şifre alanının üstünde ve sağ tarafında görünmesini sağlayın.
 
 ## 13. Fareyi (Mouse) Kovalayan Kedi
-Sayfa üzerinde mouse hareket ettikçe bir kedi (🐱) görseli imleci takip etsin.
+Sayfa üzerinde mouse hareket ettikçe bir kedi (🐱) görseli imleci takip etsin.\
 Bonus: Kedinin hareketini CSS `transition` kullanarak daha yumuşak ve akıcı hale getirin.
 
 ## 14. Çekiliş Listesi
-    Bir textarea'ya her satıra bir isim yazılsın. "Çekiliş Yap" butonuna tıklandığında metni satırlara göre ayırıp (`split`) rastgele bir isim seçsin ve kazananı büyük bir şekilde ekranda göstersin.
-    Bonus: Textarea'ya girilen isimleri localStorage'da saklayın, sayfa yenilendiğinde bu isimler otomatik olarak gelsin.
+Bir textarea'ya her satıra bir isim yazılsın. "Çekiliş Yap" butonuna tıklandığında metni satırlara göre ayırıp (`split`) rastgele bir isim seçsin ve kazananı büyük bir şekilde ekranda göstersin.\
+Bonus: Textarea'ya girilen isimleri localStorage'da saklayın, sayfa yenilendiğinde bu isimler otomatik olarak gelsin.
+
+## 15. Taş, Kağıt, Makas Oyunu
+Kullanıcı için 3 buton (🪨, 📄, ✂️) oluşturun. Kullanıcı bir seçim yaptığında bilgisayar da rastgele birini seçsin. Ekrana kazananı yazdırın (Örn: "Taş, Makası yendi! Sen Kazandın" veya "Berabere").\
+Bonus: Oyuncu ve Bilgisayar için puan tablosu yapın. Her galibiyette kazananın skorunu 1 artırın ve skoru anlık olarak ekranda gösterin.
