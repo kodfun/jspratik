@@ -51,5 +51,5 @@ Bir textarea'ya her satıra bir isim yazılsın. "Çekiliş Yap" butonuna tıkla
 Bonus: Textarea'ya girilen isimleri localStorage'da saklayın, sayfa yenilendiğinde bu isimler otomatik olarak gelsin.
 
 ## 15. Taş, Kağıt, Makas Oyunu
-Kullanıcı için 3 buton (🪨, 📄, ✂️) oluşturun. Kullanıcı bir seçim yaptığında bilgisayar da rastgele birini seçsin. Ekrana kazananı yazdırın (Örn: "Taş, Makası yendi! Sen Kazandın" veya "Berabere").\
-Bonus: Oyuncu ve Bilgisayar için puan tablosu yapın. Her galibiyette kazananın skorunu 1 artırın ve skoru anlık olarak ekranda gösterin.
+Taş, kağıt ve makas butonlarını (🪨📄✂️) oluşturun. Kullanıcı bir seçim yaptığında bilgisayar da rastgele birini seçsin. Kazanma durumunu (🎉😢🤝) ekrana yazdırın.
+Bonus: Oyuncu ve bilgisayar için skor tablosu yapın.
